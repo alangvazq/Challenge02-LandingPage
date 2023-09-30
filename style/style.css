@@ -1,0 +1,44 @@
+/* *Variables */
+:root {
+
+    /* Primary */
+    --first-primary-color: hsl(171, 66%, 44%);
+    --second-primary-color: hsl(233, 100%, 69%);
+
+    /* Neutral */
+    --first-neutral-color: hsl(210, 10%, 33%);
+    --second-neutral-color: hsl(201, 11%, 66%);
+}
+
+/* *Reset styles */
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header {
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* *Bootstrap styles */
+
+
+/* *My styles */
+
+/* *Breakpoints */
+/* sm */
+@media (min-width: 576px) {}
+
+/* md */
+@media (min-width: 768px) {}
+
+/* lg */
+@media (min-width: 992px) {}
+
+/* xl */
+@media (min-width: 1200px) {}
+
+/* xxl */
+@media (min-width: 1400px) {}
