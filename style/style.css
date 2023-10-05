@@ -11,7 +11,7 @@
 
     /* Footer */
     --third-neutral-color: hsl(220, 18%, 97%);
-    
+
 }
 
 /* *Reset styles */
@@ -22,7 +22,6 @@ body {
 }
 
 .bg-mobile {
-    display: block;
     background-image: url(../images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,75 +32,99 @@ body {
 
 /* *My styles */
 
-a{
+a {
     text-decoration: none;
     color: var(--first-neutral-color);
-    padding-bottom: 20px;
+    padding: 10px 0;
 }
 
-.bg-fp-color{
-    background-color: var(--first-primary-color);
-}
-
-.bg-sp-color{
-    background-color: var(--second-primary-color);
-}
-
-.bg-tn-color{
+.bg-tn-color {
     background-color: var(--third-neutral-color);
 }
 
-.button{
+.button-a {
     width: 310px;
     height: 55px;
+    background-color: var(--first-primary-color);
     color: white;
     letter-spacing: 1px;
     box-shadow: inset 0 -3px hsla(0, 0%, 0%, 0.3);
 }
 
-.logo{
-    width: 55px;
-    padding-top: 50px;
-    padding-bottom: 30px;
+.button-a:hover{
+    background-color: #5dccbb;
+    transition: all .3s ease-out;
 }
 
-.logo-p{
+.button-b {
+    width: 310px;
+    height: 55px;
+    background-color: var(--second-primary-color);
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: inset 0 -3px hsla(0, 0%, 0%, 0.3);
+}
+
+.button-b:hover{
+    background-color: #8796ff;
+    transition: all .3s ease-out;
+}
+
+.logo-f {
+    width: 55px;
+    height: 55px;
+    margin: 50px 0 50px 0;
+}
+
+.logo-p {
     padding-top: 120px;
     padding-bottom: 60px;
 }
 
-h1{
-    color:var(--first-neutral-color)
+h1 {
+    color: var(--first-neutral-color)
 }
 
-h2{
-    color:var(--first-neutral-color)
+h2 {
+    color: var(--first-neutral-color)
 }
 
-h3{
-    color:var(--first-neutral-color)
+h3 {
+    color: var(--first-neutral-color)
 }
 
-p{
+p {
     color: var(--second-neutral-color);
 }
 
+.p1-p {
+    padding: 0 14px 45px 14px;
+}
 
+.p2-p {
+    padding: 0 0 50px 0;
+}
+
+.p3-p {
+    padding: 0 0px 45px 0px;
+}
+
+.p4-p {
+    padding-bottom: 40px;
+}
+
+.img-fluid-ps {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-h {
+    height: 150px;
+}
 
 /* *Breakpoints */
 /* sm */
-@media (min-width: 576px) {}
-
-/* md */
-@media (min-width: 768px) {}
-
-/* lg */
-@media (min-width: 992px) {
-    .img-position{
-        position: relative;
-        left: -100px;
-    }
-
+@media (min-width: 576px) {
     .bg-mobile {
         background-image: none;
     }
@@ -113,8 +136,59 @@ p{
     }
 }
 
+/* md */
+@media (min-width: 768px) {}
+
+/* lg */
+@media (min-width: 992px) {
+    .img-fluid-ps {
+        max-width: 130%;
+        height: auto;
+        position: relative;
+        right: 110px;
+    }
+
+    .logo-p {
+        padding-top: 130px;
+    }
+
+    .p-list {
+        padding-top: 80px;
+        padding-left: 100px;
+        padding-right: 180px;
+    }
+
+    .logo-f {
+        margin: 40px 0 50px 0;
+    }
+}
+
 /* xl */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .p1-p {
+        padding: 0 320px 45px 320px;
+    }
+
+    .button {
+        width: 226px;
+    }
+
+    .p2-p {
+        padding: 0 220px 70px 220px;
+    }
+
+    .p3-p {
+        padding: 0 300px 45px 300px;
+    }
+
+    .p4-p {
+        width: 400px;
+    }
+
+    .p5-p {
+        padding: 0 300px 0 300px;
+    }
+}
 
 /* xxl */
 @media (min-width: 1400px) {}
